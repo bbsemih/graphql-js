@@ -33,7 +33,7 @@ const resolvers = {
         add(parent, args, ctx, info) {
             if (args.numbers.length === 0) {
                 return 0;
-            }
+            };
             return args.numbers.reduce((accumulator, currentValue) => {
                 return accumulator + currentValue;
             })
